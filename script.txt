@@ -1,0 +1,32 @@
+ <script>
+        function print() {
+            var w = document.getElementById("frm1");
+            var x = document.getElementById("frm1").txNome.value;
+            var y = document.getElementById("frm1").txEmail.value;
+            var z = document.getElementById("frm1").txTel.value;
+            
+        if (x == "") {
+            alert("o campo de NOME deve ser preenchido");
+            document.forms["frm1"]["txNome"].focus();
+            return false;
+        }
+            
+        if (y == "") {
+            alert("o campo de EMAIL deve ser preenchido");
+            document.forms["frm1"]["txEmail"].focus();
+            return false;
+        }
+        
+        if (z == "") {
+            alert("o campo de TELEFONE deve ser preenchido");
+            document.forms["frm1"]["txTel"].focus();
+            return false;
+        }
+          
+        w.onsubmit = function(e) {
+            e.preventDefault();
+            var printar = document.getElementById('printar');
+            printar.innerHTML = 'Nome: ' + x + '<br/>' + 'Email: ' + y + '<br/>' + 'Telefone: ' + z + '<br/>' + 'Enviado com sucesso!';
+            this.reset();
+        };    
+        }       

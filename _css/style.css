@@ -1,0 +1,587 @@
+@charset:utf-8;
+
+
+* {
+	padding: 0;
+	margin: 0 auto;
+}
+
+/* ------- o main e o body do index ------- */ 
+body {
+    margin: 0;
+}
+
+main {
+	//border: 1px solid purple;
+	margin-bottom: 50px;
+    background-color: white;
+	width: 70%;
+}
+
+/* ------- a cabeça do documento ------- */ 
+figure {
+    height: 200px;
+	background-color:rgba(0,0,0);
+}
+
+/*
+figure img {
+    margin: 0px 0px 0px 20px;
+    width:264px;
+    height:195px; 
+}
+*/
+div a{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* -------- botão tema black white ------ */
+.button1 {
+  background-color: silver; 
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.button2 {
+  background-color: black; 
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+/* -------- menu de navegação ------ */
+nav ul {
+	//border: 1px solid #B0C4DE;
+	list-style: none;
+	background-color: rgba(0, 0, 0, 0.7);//#B0C4DE;
+	text-align: center;
+    margin-bottom: 30px ;
+}
+
+nav ul li {
+	//border: 1px solid pink;
+	//background-color: #B0C4DE;
+	padding: 20px 0px;
+	width: 200px;
+	color: #B0C4DE;
+	text-align: center;
+	display: inline-block; // exibe todos os li do menu na horizontal
+    
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	outline: none;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 20px;
+}
+
+nav ul li:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	transition: 0.6s;
+}
+
+/* ----- banner -----*/
+body, #slider, .wrap, .slide-content {
+  margin: 0;
+  padding: 0;
+ font-family: 'Titillium Web', sans-serif;
+  width: 100%;
+  height: 30vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("../_img/microchip.jpg");
+
+}
+.slide2 {
+  background-image: url("../_img/confiabilidade.jpg");
+   
+}
+.slide3 {
+  background-image: url("../_img/desenvolvimento.png.jpg");
+    
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+/* -------- Menu Vertical ( da Lateral esquerda ) ----------- */
+/* -------- Menu Vertical ( da Lateral esquerda ) ----------- */
+aside ul {
+    margin: 10px 5px 10px 10px;
+    width: 23%;
+    list-style: none;
+    float: left;
+}
+
+aside ul li {
+	//border: 1px solid #00BFFF;
+	background-color: rgba(0, 0, 0, 0.7);//#B0C4DE;
+ 	padding: 23px 0px;
+	width: 90%;//200px;    
+	text-align: center;
+    border-bottom:3px solid black;
+    transition: 0.6s;
+    //background-color: blue; 
+
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5px;
+    //background-color: red;
+    font-size:14px;
+}
+
+aside ul li:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+    border-bottom:3px solid black;
+    
+}
+
+/* --------- Iframe da pagina index.html --------*/
+iframe {
+	margin: 10px 15px 10px 5px;
+	width: 70%;
+	height:300px;
+	background-color:white;
+	display: block;
+}
+
+.conteudo-principal p {
+	margin: 25px 25px 0px 10px;
+	color: black;
+	text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* -------------- Conteudo da página ------------ */
+/* esse seletor h1 refere-se ao seletor onde está escrito: Soluções F5 */
+h1, .conteudo-principal h1 {
+	//border: 1px solid black;
+	background-color: rgba(0,0,0,0.4);//#B0C4DE;
+	padding: 10px 0px 10px 15px;
+	margin: 30px 24px 0px 10px;
+	color: white;
+	width: 96%;
+    //font-style: italic;
+}
+
+/* ---------- Formulário -------------*/
+
+
+#formulario {
+	border: 10px solid black;
+	margin: 30px 24px 20px 10px;
+	padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#formulario fieldset {
+	border: 5px solid #E8B833;
+}
+
+
+#formulario fieldset legend {
+	font-size: 20px;
+	color: white;
+    //font-family: 'Titillium Web', sans-serif;
+}
+
+
+/* ------ configura todos os paragrafos do formulário ------*/
+#formulario fieldset p {
+	margin: 5px 0px 10px 20px;
+	color: azure;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------ configura todos os inputs do formulário ------*/
+#formulario fieldset p #nome {
+	background-color: white;
+	margin: 20px 0px 15px 10px;
+	padding: 7px 3px;
+	width: 250px;
+
+}
+
+#formulario fieldset p #empresa {
+	background-color: white;
+    margin: 0px 0px 15px 12px;
+    padding: 7px 3px;
+    width: 249px;
+}
+
+
+/* ---- parágrafo onde o input do email está inserido -------*/
+#formulario fieldset p #email {
+	background-color: white;
+    margin: 0px 0px 15px 12px;
+    padding: 7px 3px;
+    width: 249px;
+}
+
+#formulario fieldset p #telefone {
+	background-color: white;
+    margin: 0px 0px 15px 12px;
+    padding: 7px 3px;
+    width: 249px;
+}
+
+#formulario fieldset p #data {
+	background-color: white;
+    margin: 0px 0px 15px 12px;
+    padding: 7px 3px;
+    width: 150px;
+}
+
+#formulario fieldset p #horario {
+	background-color: white;
+    margin: 0px 0px 15px 12px;
+    padding: 7px 3px;
+    width: 80px;
+}
+
+#formulario fieldset p .assunto {
+	margin: 0px 0px 15px 10px;
+
+}
+	
+
+
+/*#formulario fieldset p #assunto {
+	background-color: white;
+	margin: 0px 0px 15px 10px;
+	padding: 7px 3px;
+    width: 234px;
+}*/
+
+/* ---- parágrafo onde o input do text-area está inserido -------*/
+#formulario fieldset p #text-area {
+	background-color: white;
+	margin: 20px 0px 0px -2px;
+	width: 80%;
+	height: 300px;
+	font-size: 15px;
+}
+
+/* ---- parágrafo onde o input do botão de enviar está inserido -------*/
+#formulario fieldset p #submit {
+	background-color: black;
+	margin: 10px 0px 5px 10px;
+	border: 0;
+	color: azure;
+	width: 90px;
+	height: 35px;
+}
+
+#formulario fieldset p #submit:hover {
+	background-color: grey;
+	color: black;
+}
+
+/* ----- estilização dos placeholders dos inputs do formulário ------*/
+#nome::placeholder { color:black; }
+
+#email::placeholder { color:black; }
+
+#assunto::placeholder { color:black; } 
+
+#text-area::placeholder { color: black; }
+
+
+/* ------- footer da pagina index.html -------*/
+#footer {
+	border: 1px solid black;
+	background-color: black;
+	width: 99.5%;
+	//height: 100px;
+}
+
+#footer p {
+	border: 3px solid #E8B833;
+	margin: 30px 23px 30px 15px;
+	padding: 10px;
+	color: azure;
+}
+
+/* -------- estilização do iframe-manut-computadores.html ------- */
+#body-manut-computadores {
+	background-color: #5C4E27;
+}
+
+#main-manut-computadores {
+	background-color: #5C4E27;
+	width: 100%;
+	color: azure;
+	text-align: justify;
+}
+
+#h1-manut-computadores {
+	color: #E8B833;
+}
+
+
+/* ------ estilização do iframe-desenv-software.html -------*/
+#body-desenv-software {
+    background-color: #614036;
+}
+
+#main-desenv-software {
+	background-color: #614036;
+	width: 100%;
+	color: azure;
+	text-align: justify;
+}
+
+#h1-desenv-software {
+	color: #E8B833;
+}
+
+
+/* ------ estilização do iframe-servidores.html -------*/
+#body-servidores {
+    background-color: #2E231F;
+} 
+
+#main-servidores {
+	background-color: #2E231F;
+	width: 100%;
+	color: azure;
+	text-align: justify;
+}
+
+#h1-servidores {
+	color: #E8B833;
+}
+
+
+/* ------ estilização do iframe-servidores.html -------*/
+#body-cab-estruturado {
+    background-color: #525159;
+}
+#main-cab-estruturado {
+	width: 100%;
+	background-color: #525159;
+	color: azure;
+	text-align: justify;
+}
+
+#h1-cab-estruturado {
+    color: #E8B833;
+}
+
+/* ----- não exibe na versão desktop o menu #pqn-menu (que é da versão celular...) ------*/
+#pqn-menu {
+	display: none;
+}
+
+.pqn-conteudo-principal {
+	color: azure;
+	display: none;
+}
+
+
+/* --------- o que não é exibido somente na versão Desktop --------*/
+@media only screen and (max-width: 785px) {    
+
+/* ------ retira o menu vertical da versão celular  ------*/    
+.menuNavVertical {
+	display: none;        
+}
+
+/* ------ retira o iframe da versão desktop ------*/
+iframe {
+	display: none;
+}
+
+
+/* ----- configuração para celular começa aqui -----*/ 
+main {
+    width: 100%;
+}
+
+/* volta a exibir o menu #pqn-menu na versão celular-*/
+#pqn-menu {
+	display: block;
+}
+
+#pqn-menu ul {
+	margin: 5px 0px 0px -2px;
+	width: 100%;        
+}
+
+#pqn-menu ul li a {
+	padding: 25px;        
+}
+
+/* ----- exibe na versão celular o conteudo que não é exibido na versão Desktop ------*/
+.pqn-conteudo-principal {
+	color: ;
+	display: block;
+}  
+
+h1, .conteudo-principal h1 {
+border: 0px solid black;
+background-color: rgba(0,0,0,0.4);//black;
+padding: 10px 0px 10px 5px;
+margin: 30px 24px 0px 10px;
+color: white;
+width: 96%;
+//font-style: italic;
+    
+}
+
+
+/* ------- tag h1 fora do conteudo pqn-conteudo-principal da página --------*/
+.pqn-main h1 {
+    margin: 10px 0px 0px 1px;
+	font-size: 20px;
+    
+}	
+
+/* ----- conteúdo da div que contém o conteúdo principal para o celular ----- */
+.pqn-conteudo-principal {
+	margin: 290px 0px 0px 0px;
+}
+
+.pqn-conteudo-principal div {
+	margin-bottom: 30px;    
+}
+
+/* ------ tags h1 dentro do conteudo principal da página para o celular --------*/
+.pqn-conteudo-principal h1 {
+	margin-top: 10px;
+	font-size: 20px;
+    
+}
+
+.pqn-conteudo-principal p {
+    margin: 25px 25px 0px 10px;
+    color: black;
+	text-align: justify;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ---------- Formulário -------------*/
+#formulario {
+	border: 5px solid black;
+	background-color: rgba(0, 0, 0, 0.7);//#B0C4DE;  
+    
+}
+
+#formulario fieldset {
+	border: 3px solid #E8B833;
+
+}
+    
+#formulario fieldset p {
+	margin: 10px 10px 10px 10px;
+	color: white;
+}
+
+/* ---- parágrafo onde o input do nome está inserido -------*/
+#formulario fieldset p #nome {
+    margin: 0px 0px 5px 10px;
+	width: 60%;
+}
+
+/* ---- parágrafo onde o input do email está inserido -------*/
+
+#formulario fieldset p #email {
+	margin-bottom: 5px;
+    width: 60%;
+}
+
+#formulario fieldset p #assunto {
+    width: 65%;
+}
+
+/* ---- parágrafo onde o input do text-area está inserido -------*/
+#formulario fieldset p #text-area {
+	background-color: white;
+	margin-top: 20px;
+	width: 95%;
+	height: 300px;
+	font-size: 15px;
+}
+
+/* ---- parágrafo onde o input do botão de enviar está inserido -------*/
+#formulario fieldset p #submit {
+	background-color: black;
+	border: 0;
+	color: azure;
+	width: 30%;
+	height: 35px;
+}
+
+#formulario fieldset p #submit:hover {
+	background-color: grey;
+	color: black;
+}
+
+

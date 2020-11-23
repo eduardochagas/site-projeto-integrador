@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="_js/lib/moment/moment-with-locales-min.js"></script>
+
+	<script>
+
+
+		
+		function mensagem() {
+			//alert(moment('06/05/2020').format('L dddd'));
+			var m = moment('05/06/2020');
+			m.locale('pt-br');
+			alert(m.toString());
+		//	alert('funcionou !!!')
+		}
+	</script>
+
+</head>
+<body>
+
+	<h1>pagina para teste</h1>
+
+	<form action="">
+		<h2>formulário</h2><br/>
+	<button onclick="mensagem()">clique</button>
+	</form>
+
+	
+</body>
+</html>

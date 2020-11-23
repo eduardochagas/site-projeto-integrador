@@ -1,0 +1,47 @@
+
+* {
+	margin: 0;
+}
+
+h2#titulo {
+	margin: 20px 0 0 40px;
+}
+
+div {
+	margin: 10px 40px 20px 40px;
+	//background-color: pink;
+	//border: 1px solid black;
+}
+
+table#tabela {
+	margin-bottom: 10px;
+	border-collapse: collapse;
+	width:100%;
+}
+
+table#tabela th {
+	background-color: #bfb39b;
+	border: 1px solid black;
+	padding: 7px;
+}
+
+table#tabela tr {
+	background-color: #ffb01c;
+}
+
+#tabela tr:nth-child(even) {
+	background-color: #ff991c;
+}
+
+table#tabela td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
