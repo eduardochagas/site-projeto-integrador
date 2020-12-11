@@ -8,7 +8,8 @@ class SqlCmd extends PDO {
     
 
     public function __construct(){
-        $this->cn = new PDO("mysql:host=127.0.0.1;dbname=f5tecnologia","root","");
+        //$this->cn = new PDO("mysql:host=127.0.0.1;dbname=f5tecnologia","root","");
+	$this->cn = new PDO("mysql:host=softkleen.com.br;dbname=wellington_fcinco","fcincoon","bm*5rN60");
     }
     // método atribui itens do array $parametro para o comando sql... 
     public function setParametros($comando, $parametros = array()){
